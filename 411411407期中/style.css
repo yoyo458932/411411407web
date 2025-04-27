@@ -10,21 +10,21 @@ body {
     list-style: none;
     gap: 1rem;
     padding: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     background-color: #ffffff;
     border-bottom: 1px solid #ddd;
   }
   nav a {
     text-decoration: none;
-    color: #0077cc;
+    color: #cc00be;
     padding: 1rem;
   }
   
   .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+    gap: 3rem;
+    margin-bottom: 5rem;
   }
   
   .card {
@@ -82,23 +82,23 @@ body {
   }
   
   .btn-1 {
-    background: #ffe8f1;
-    color: #ff69a6;
+    background: #d6a7a7;
+    color: #fd0202;
   }
   
   .btn-2 {
-    background: #ccf4ff;
-    color: #68a3ff;
+    background: #ceeff9;
+    color: #072af1;
   }
   
   .btn-3 {
-    background: #e3fcec;
-    color: #55c57a;
+    background: #d8fadc;
+    color: #00fe55;
   }
   
   .btn-4 {
-    background: #fef9c3;
-    color: #facc15;
+    background: #faf8e0;
+    color: #ffcc00;
   }
   
   .btn:hover {
@@ -114,9 +114,24 @@ body {
     margin-top: 1rem;
   }
   
-  /* 響應式設計 */
   @media screen and (max-width: 650px) {
     .card-container {
       grid-template-columns: 1fr;
     }
+
+  }
+  .card-1{
+    border-color: #fd0202;
+  }
+
+  .card-2{
+    border-color: #072af1;
+  }
+
+  .card-3{
+    border-color: #00fe55;
+  }
+
+  .card-4{
+    border-color: #ffcc00;
   }
