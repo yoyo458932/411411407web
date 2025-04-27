@@ -1,0 +1,122 @@
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    margin: 0;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+  }
+  nav a {
+    text-decoration: none;
+    color: #0077cc;
+    padding: 1rem;
+  }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 0.5rem;
+    border: 2px solid transparent;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-img {
+    width: 100%;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-header {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+  }
+  
+  .card-content {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 1rem;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .btn {
+    text-transform: capitalize;
+    padding: 0.5rem 1rem;
+    border: transparent;
+    border-radius: 0.5rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-1 {
+    background: #ffe8f1;
+    color: #ff69a6;
+  }
+  
+  .btn-2 {
+    background: #ccf4ff;
+    color: #68a3ff;
+  }
+  
+  .btn-3 {
+    background: #e3fcec;
+    color: #55c57a;
+  }
+  
+  .btn-4 {
+    background: #fef9c3;
+    color: #facc15;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  iframe {
+    resize: both;
+    overflow: auto;
+    border: 1px solid #ccc;
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+  }
+  
+  /* 響應式設計 */
+  @media screen and (max-width: 650px) {
+    .card-container {
+      grid-template-columns: 1fr;
+    }
+  }
